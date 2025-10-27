@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ilyass Chahbia — Backend Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.13/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    // --- Theme Handling ---
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+
+  <!-- HEADER -->
+  <header class="bg-black dark:bg-gray-800 text-white text-center py-10 relative">
+    <h1 class="text-3xl font-bold tracking-tight">Ilyass Chahbia</h1>
+    <p class="text-gray-300 text-sm mt-2">Backend Developer | C/C++ | Node.js | Docker</p>
+    <div class="flex justify-center gap-4 mt-4 text-sm">
+      <a href="mailto:ilyasschahbia@gmail.com" class="hover:text-gray-400">Email</a>
+      <span>·</span>
+      <a href="https://github.com/Ilyass1Chahbia" target="_blank" class="hover:text-gray-400">GitHub</a>
+      <span>·</span>
+      <a href="https://linkedin.com/in/ilyass-chabhia" target="_blank" class="hover:text-gray-400">LinkedIn</a>
+    </div>
+    <button
+      id="theme-toggle"
+      class="absolute top-4 right-4 bg-gray-700 text-white rounded-full px-3 py-1 text-xs hover:bg-gray-600 transition"
+    >
+      🌙 Dark
+    </button>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-3xl mx-auto px-6 py-12">
+    <h2 class="text-xl font-semibold border-b border-gray-200 dark:border-gray-700 pb-1 mb-4">About Me</h2>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      I’m a backend developer passionate about performance, scalability, and clean API design.
+      I work primarily with C, C++, and JavaScript/Node.js, building reliable systems and Dockerized infrastructures.
+    </p>
+  </section>
+
+  <!-- PROJECTS GRID -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-8">
+    <h2 class="text-xl font-semibold border-b border-gray-200 dark:border-gray-700 pb-1 mb-6">Projects</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-5 border border-gray-100 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800">
+        <h3 class="font-semibold text-lg mb-1">ft_transcendence</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Multiplayer Pong game built with TypeScript, Node.js, and SQLite. Includes real-time matchmaking and OAuth2 authentication.
+        </p>
+        <a href="https://github.com/Ilyass1Chahbia/ft_transcendence" target="_blank"
+           class="inline-block bg-black dark:bg-gray-700 text-white text-xs px-3 py-1 rounded hover:bg-gray-800 dark:hover:bg-gray-600">
+          🔗 View on GitHub
+        </a>
+      </div>
+
+      <div class="p-5 border border-gray-100 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800">
+        <h3 class="font-semibold text-lg mb-1">Inception</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Docker-based infrastructure integrating Nginx, MariaDB, and WordPress. Demonstrates container orchestration and automation.
+        </p>
+        <a href="https://github.com/Ilyass1Chahbia/Inception" target="_blank"
+           class="inline-block bg-black dark:bg-gray-700 text-white text-xs px-3 py-1 rounded hover:bg-gray-800 dark:hover:bg-gray-600">
+          🔗 View on GitHub
+        </a>
+      </div>
+
+      <div class="p-5 border border-gray-100 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition bg-white dark:bg-gray-800">
+        <h3 class="font-semibold text-lg mb-1">ft_irc</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Custom IRC server written in C++98 with multi-client support, channel management, and socket-based concurrency.
+        </p>
+        <a href="https://github.com/Ilyass1Chahbia/ft_irc" target="_blank"
+           class="inline-block bg-black dark:bg-gray-700 text-white text-xs px-3 py-1 rounded hover:bg-gray-800 dark:hover:bg-gray-600">
+          🔗 View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-3xl mx-auto px-6 py-8">
+    <h2 class="text-xl font-semibold border-b border-gray-200 dark:border-gray-700 pb-1 mb-4">Technical Skills</h2>
+    <ul class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 text-gray-700 dark:text-gray-300 text-sm">
+      <li>🔹 C / C++</li>
+      <li>🔹 Node.js</li>
+      <li>🔹 Express.js</li>
+      <li>🔹 Docker</li>
+      <li>🔹 Git / GitHub</li>
+      <li>🔹 SQL / SQLite</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-8 mb-10">
+    <h2 class="text-xl font-semibold border-b border-gray-200 dark:border-gray-700 pb-1 mb-4">Contact</h2>
+    <p class="text-gray-700 dark:text-gray-300 text-sm">
+      I’m always open to interesting backend roles and collaboration opportunities.<br>
+      Reach me at
+      <a href="mailto:ilyasschahbia@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">
+        ilyasschahbia@gmail.com
+      </a>.
+    </p>
+  </section>
+
+  <footer class="text-center text-xs text-gray-400 dark:text-gray-500 py-6 border-t border-gray-100 dark:border-gray-800">
+    © 2025 Ilyass Chahbia — Built with Tailwind CSS
+  </footer>
+
+  <script>
+    // --- Toggle theme manually ---
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+        toggle.textContent = '☀️ Light';
+      } else {
+        localStorage.theme = 'light';
+        toggle.textContent = '🌙 Dark';
+      }
+    });
+    // Set initial button label
+    if (document.documentElement.classList.contains('dark')) {
+      toggle.textContent = '☀️ Light';
+    } else {
+      toggle.textContent = '🌙 Dark';
+    }
+  </script>
+</body>
+</html>
